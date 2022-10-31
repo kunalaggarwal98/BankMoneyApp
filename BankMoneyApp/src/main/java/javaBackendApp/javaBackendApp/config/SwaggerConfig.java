@@ -20,7 +20,7 @@ public class SwaggerConfig {
 		return new Docket(DocumentationType.SWAGGER_2).select()
 				.apis(RequestHandlerSelectors.basePackage("javaBackendApp.javaBackendApp")).paths(PathSelectors.ant("/api/**"))
 				.build()
-		        .apiInfo(apiInfo());
+		        .apiInfo(apiInfo());;;;;;
 	}
 
 	private ApiInfo apiInfo() {
